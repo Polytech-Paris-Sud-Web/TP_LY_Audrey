@@ -1,0 +1,16 @@
+{
+  "articles": [
+    {
+      "title": "Fake Title",
+      "content": "ezez",
+      "authors": "ez",
+      "id": 2
+    },
+    {
+      "title": "Fake Title",
+      "content": "zeez",
+      "authors": "zae",
+      "id": 3
+    }
+  ]
+}
