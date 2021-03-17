@@ -1,0 +1,17 @@
+<a  *ngIf="this.route.snapshot.params['id']" routerLink="/articles" >Retourner à la liste</a>
+<h1>Article :</h1>
+<div class="jumbotron" *ngIf='this.article; else elseBlock2'>
+	<div *ngIf="!this.route.snapshot.params['id']; else elseBlock">
+		<h3> {{this.article.id}} : Accédez à <a [routerLink]="['/article', this.article.id]">{{this.article.title}} </a></h3>
+	</div>
+	<ng-template #elseBlock>
+		<h3> {{this.article.id}} : {{this.article.title}}</h3>
+	</ng-template>
+	<h4> written by {{this.article.authors}}</h4>
+	<p> {{this.article.content}} </p>
+
+	<button (click)='onClickDelete()'>Supprimer</button>
+</div>
+<ng-template #elseBlock2>
+	<h3> Cet article n'existe pas</h3>
+</ng-template>
