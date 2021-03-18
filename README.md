@@ -1,6 +1,9 @@
 # TP_LY_Audrey
 Rendu du TP, entrainement sur angular
+Le bonus du TP se trouve sur la branche Rendu_Bonus
 
+
+Rendu principal :
 Création d'un affichage d'articles stockés dans db.json.
 
 Routes :
